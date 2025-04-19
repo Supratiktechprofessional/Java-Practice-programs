@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class Exercise2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt(System.in);
-        int b = sc.nextInt(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
         int sum = a + b;
         // Print the result of the addition
         System.out.println(sum);
