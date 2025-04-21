@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Exercise13 {
+    public static void main(String[] strings) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask user for width
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+
+        // Ask user for height
+        System.out.print("Enter the height of the rectangle: ");
+        double height = scanner.nextDouble();
+
+        // Calculate the perimeter of the rectangle
+        double perimeter = 2 * (height + width);
+
+        // Calculate the area of the rectangle
+        double area = width * height;
+
+        // Print the calculated perimeter
+        System.out.printf("Perimeter is 2*(%.1f + %.1f) = %.2f \n", height, width, perimeter);
+
+        // Print the calculated area
+        System.out.printf("Area is %.1f * %.1f = %.2f \n", width, height, area);
+
+        scanner.close();
+    }
+}
